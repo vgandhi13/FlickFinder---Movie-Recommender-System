@@ -1,0 +1,112 @@
+/* index.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    background-image: url("/static/images/Movies Poster.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(3px); /* Adjust the blur radius as desired */
+  }
+  
+  
+  .container {
+    max-width: 100px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Less transparent background overlay */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  
+  
+  .content {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+  }
+  
+  
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  /* Form styles */
+  form {
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #FF3366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #E6005C;
+  }
+  
+  /* Result styles */
+  .results {
+    margin-top: 30px;
+  }
+  
+  .results h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .results li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  
