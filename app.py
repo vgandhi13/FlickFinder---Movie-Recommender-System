@@ -68,7 +68,7 @@ def initialize(ratings_filepath, movies_filepath):
     movies_columns = ['serial_number_movie', 'name', 'genre']
     ratings = create_raw_dataframe(ratings_filepath, scores_columns)
     movies = create_raw_dataframe(movies_filepath, movies_columns)
-    return (ratings, movies)
+    return (ratings, movies)  #tuple of DataFrames
 
 def store_decomposition(U, S, V):
     decomp = {'U': U, 'S': S, 'V': V}
