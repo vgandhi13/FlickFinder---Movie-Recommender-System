@@ -21,9 +21,9 @@ body {
     filter: blur(3px); /* Adjust the blur radius as desired */
   }
   
-  
-  .container {
-    max-width: 100px;
+  .containerr {
+    width: 40%; /* Set the desired width */
+    height: 36%; /* Set the desired height */
     margin: auto;
     position: fixed;
     top: 50%;
@@ -33,9 +33,12 @@ body {
     text-align: center;
     font-family: Helvetica, sans-serif;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8); /* Less transparent background overlay */
-    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
   }
+  
+  
+  
   
   
   
@@ -54,9 +57,10 @@ body {
     margin-bottom: 30px;
   }
   
-  h1 {
-    font-size: 32px;
-    color: #333;
+ 
+
+  .flicktitle{
+    font-size: 100px;
   }
   
   /* Form styles */

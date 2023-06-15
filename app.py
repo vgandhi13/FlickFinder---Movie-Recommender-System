@@ -113,7 +113,7 @@ def index():
         movie = request.form.get('movie')
         recommendations = work(movie) 
         result = "<br>".join([str(temp) for temp in recommendations])    
-        return f'<div style="text-align:center; font-family: Helvetica, sans-serif;"><h1>Movie Recommender System</h1><p style="text-decoration: underline;">{movie}</p><p> {result}</p></div>'
+        return render_template('recommendations.html', movie = movie,result=result)
     return render_template('index.html')
 
 
